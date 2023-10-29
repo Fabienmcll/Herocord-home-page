@@ -1,0 +1,385 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* SCROLL BAR */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fe6601;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1D1D1F;
+}
+
+/* PAGE */
+
+body{
+    background: #1D1D1F;
+    color: white;
+    overflow-x: hidden;
+    /* border: purple solid 1px;  */
+}
+
+.topbar{
+    /* border: red solid 2px; */
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.topbar .left{
+    display: flex;
+    align-items: center;
+}
+
+.topbar .left img{
+    border-radius: 50%;
+    height: 40px;
+}
+
+.topbar .left p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-left: 15px;
+}
+
+.topbar .middle ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.topbar .middle a{
+    color:#ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.topbar .middle li {
+    margin: 0 15px;
+}
+
+.topbar .middle li:first-child {
+    margin-left: 0; 
+}
+
+.topbar .middle li:last-child {
+    margin-right: 0; 
+}
+
+.topbar .middle a:hover{
+    color: #fe6601;
+}
+
+.topbar .rigth ul,
+.topbar .rigth a{
+    list-style: none;
+    text-decoration: none;
+    color:#ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #fe6601;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+.topbar .rigth li{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+/* CONTENT */
+
+.box1{
+    display: flex;
+    /* border: 2px red solid; */
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+
+.box1 .left h1{
+    font-family: 'Sen', sans-serif;
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 96px;
+}
+
+.box1 .left p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 27px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.box1 .button{
+    margin-top: 40px;
+}
+
+.box1 .button ul,
+.box1 .button a{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+
+}
+
+.box1 .button li{
+   display: flex;
+   align-items: center;
+
+}
+
+.box1 .button .discord{
+    padding: 18px;
+    background-color: #FE7920;
+    border-radius: 30px;
+    width: auto;
+
+}
+
+.box1 .button .server{
+    padding: 18px;
+    background: transparent;
+    color: #434A57;
+    border: rgba(255, 255, 255, 0.7) solid 2px;
+    border-radius: 30px;
+    width: auto;
+    margin-left: 20px;
+
+}
+
+.box1 .discord i{
+   margin-right: 10px;
+
+}
+
+.box1 .server i{
+    margin-left: 10px;
+    color: white;
+
+ 
+ }
+
+.box1 .rigth img{
+    height: 350px;
+}
+
+
+.box2 {
+    margin-top: 175px;
+    margin-bottom: 255px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    /* border: red solid 2px; */
+
+}
+
+.box2 .left img{
+    width: 622px;
+    height: 465px;
+    border-radius: 30px;
+}
+
+.box2 .right .title{
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    margin-bottom: 47px;
+    color: white;
+
+}
+
+.box2 .right p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.7)
+
+}
+
+
+.box3 {
+    margin-top: 175px;
+    margin-bottom: 255px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    /* border: red solid 2px; */
+
+}
+
+.box3 .rigth img{
+    width: 622px;
+    height: 465px;
+    border-radius: 30px;
+}
+
+.box3 .left .title{
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    margin-bottom: 47px;
+    color: white;
+
+}
+
+.box3 .left p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.7)
+}
+
+.box4 {
+    margin-top: 175px;
+    margin-bottom: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    /* border: red solid 2px; */
+
+}
+
+.box4 .left img{
+    width: 622px;
+    height: 465px;
+    border-radius: 30px;
+}
+
+.box4 .right .title{
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    margin-bottom: 47px;
+    color: white;
+
+}
+
+.box4 .right p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.7)
+}
+
+.box5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 175px;
+}
+
+.box5 p{
+    font-family: 'Sen', sans-serif;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 73px;
+    color: white;
+    margin-bottom: 57px;
+    width: 100%;
+}
+
+.box5 .button li, a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.box5 .button  a{
+    color: white;
+    padding: 18px;
+    background-color: #fe6601;
+    border-radius: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    
+}
+
+.box5 .button{
+    height: auto;
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.footer .left ul, .rigth{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer .left a{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+
+.footer .left li {
+    margin: 0 10px;
+}
+
+.footer .left li:first-child {
+    margin-left: 0; 
+}
+
+.footer .left li:last-child {
+    margin-right: 0; 
+}
+
+.footer .reddit {
+    margin: 0 10px;
+}
+
+.footer .rigth .discord, .reddit, .twitter{
+    background-color: #29292A;
+    padding: 10px;
+    border-radius: 20px;
+}
