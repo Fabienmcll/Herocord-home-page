@@ -10,6 +10,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Sen:wght@500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
+/* VAR */
+
+:root{
+    --Background: #1D1D1F ;
+    --White: #ffffff ;
+    --Grey: rgba(255, 255, 255, 0.7) ;
+    --Orange: #fe6601 ;
+    --Hover: #FE7920 ;
+}
+
+
 /* SCROLL BAR */
 
 ::-webkit-scrollbar {
@@ -17,25 +28,25 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #fe6601;
+    background: var(--Orange);
     border-radius: 6px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #1D1D1F;
+    background: var(--Background);
 }
 
 /* PAGE */
 
 body{
     background: #1D1D1F;
-    color: white;
+    color: var(--White);
     overflow-x: hidden;
-    /* border: purple solid 1px;  */
+    margin: 0 125px;
 }
 
 .topbar{
-    /* border: red solid 2px; */
+   margin-top: 10px;;
     padding: 15px;
     display: flex;
     justify-content: space-around;
@@ -45,6 +56,7 @@ body{
 .topbar .left{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .topbar .left img{
@@ -66,7 +78,7 @@ body{
 }
 
 .topbar .middle a{
-    color:#ffffff;
+    color: var(--Grey);
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -87,20 +99,24 @@ body{
 }
 
 .topbar .middle a:hover{
-    color: #fe6601;
+    color: var(--Hover);
 }
 
-.topbar .rigth ul,
-.topbar .rigth a{
+.topbar .rigth ul{
     list-style: none;
     text-decoration: none;
-    color:#ffffff;
+    cursor: pointer;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 14px;
-    background-color: #fe6601;
+    background-color: var(--Orange);
     padding: 6px;
     border-radius: 20px;
+}
+
+.topbar .rigth a{
+    padding: 6px;
+    color: var(--White);
 }
 
 .topbar .rigth li{
@@ -109,15 +125,19 @@ body{
     margin: 0 10px;
 }
 
+.topbar .rigth ul:hover{
+    background: var(--Hover);
+}
+
+
+
 /* CONTENT */
 
 .box1{
     display: flex;
-    /* border: 2px red solid; */
-    justify-content: space-around;
     align-items: center;
-    width: 100%;
-    margin-top: 60px;
+    margin: 0 125px;
+    margin-top: 100px;
 }
 
 
@@ -126,14 +146,15 @@ body{
     font-weight: 800;
     font-size: 96px;
     line-height: 96px;
+    margin-bottom: 30px;
 }
-
+ 
 .box1 .left p{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 27px;
     font-size: 18px;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--Grey);
 }
 
 .box1 .button{
@@ -145,7 +166,7 @@ body{
     text-decoration: none;
     list-style: none;
     display: flex;
-    color: white;
+    color: var(--White);
     font-family: 'Inter', sans-serif;
     font-weight: 600;
 
@@ -154,14 +175,21 @@ body{
 .box1 .button li{
    display: flex;
    align-items: center;
+   cursor: pointer;
 
 }
 
 .box1 .button .discord{
     padding: 18px;
-    background-color: #FE7920;
+    background-color: var(--Orange);
     border-radius: 30px;
     width: auto;
+
+}
+
+.box1 .button .discord:hover{
+    background-color: var(--Hover);
+   
 
 }
 
@@ -169,11 +197,16 @@ body{
     padding: 18px;
     background: transparent;
     color: #434A57;
-    border: rgba(255, 255, 255, 0.7) solid 2px;
+    border: var(--Grey) solid 2px;
     border-radius: 30px;
     width: auto;
     margin-left: 20px;
 
+}
+
+.box1 .button .server:hover{
+    background: var(--Grey);
+    
 }
 
 .box1 .discord i{
@@ -183,24 +216,23 @@ body{
 
 .box1 .server i{
     margin-left: 10px;
-    color: white;
+    color: var(--White);
 
  
  }
 
 .box1 .rigth img{
     height: 350px;
+    margin-left: 235px;
 }
 
 
 .box2 {
-    margin-top: 175px;
     margin-bottom: 255px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    width: 100%;
-    /* border: red solid 2px; */
+    margin: 175px 125px 0 125px;
+    
 
 }
 
@@ -210,13 +242,17 @@ body{
     border-radius: 30px;
 }
 
+.box2 .right{
+    margin-left: 153px;
+}
+
 .box2 .right .title{
     font-family: 'Sen', sans-serif;
     font-weight: 700;
     font-size: 48px;
     line-height: 62px;
     margin-bottom: 47px;
-    color: white;
+    color: var(--White);
 
 }
 
@@ -225,19 +261,15 @@ body{
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
-    color: rgba(255, 255, 255, 0.7)
+    color: var(--Grey) ;
 
 }
 
 
 .box3 {
-    margin-top: 175px;
-    margin-bottom: 255px;
     display: flex;
-    justify-content: space-around;
+    margin: 175px 125px 255px 125px;
     align-items: center;
-    width: 100%;
-    /* border: red solid 2px; */
 
 }
 
@@ -245,6 +277,7 @@ body{
     width: 622px;
     height: 465px;
     border-radius: 30px;
+    margin-left: 153px;
 }
 
 .box3 .left .title{
@@ -253,7 +286,7 @@ body{
     font-size: 48px;
     line-height: 62px;
     margin-bottom: 47px;
-    color: white;
+    color: var(--White);
 
 }
 
@@ -262,17 +295,14 @@ body{
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
-    color: rgba(255, 255, 255, 0.7)
+    color: var(--Grey);
 }
 
 .box4 {
-    margin-top: 175px;
-    margin-bottom: 250px;
     display: flex;
-    justify-content: space-around;
+    margin: 175px 125px 250px 125px;
     align-items: center;
-    width: 100%;
-    /* border: red solid 2px; */
+    
 
 }
 
@@ -288,8 +318,12 @@ body{
     font-size: 48px;
     line-height: 62px;
     margin-bottom: 47px;
-    color: white;
+    color: var(--White);
 
+}
+
+.box4 .right{
+    margin-left: 153px;
 }
 
 .box4 .right p{
@@ -297,7 +331,7 @@ body{
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
-    color: rgba(255, 255, 255, 0.7)
+    color: var(--Grey);
 }
 
 .box5{
@@ -313,7 +347,7 @@ body{
     font-weight: 800;
     font-size: 56px;
     line-height: 73px;
-    color: white;
+    color: var(--White);
     margin-bottom: 57px;
     width: 100%;
 }
@@ -321,12 +355,13 @@ body{
 .box5 .button li, a{
     text-decoration: none;
     list-style: none;
+    cursor: pointer;
 }
 
 .box5 .button  a{
-    color: white;
+    color: var(--White);
     padding: 18px;
-    background-color: #fe6601;
+    background-color: var(--Orange);
     border-radius: 30px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
@@ -335,10 +370,23 @@ body{
     
 }
 
+.box5 .button a:hover{
+    background-color: var(--Hover);
+}
+
 .box5 .button{
     height: auto;
     width: 100%;
 }
+.box5 .magic {
+    background: linear-gradient(90deg, rgba(165,7,255,1) 0%, rgba(8,39,235,1) 35%, rgba(255,0,181,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+    
+
+
+/* Footer */
 
 .footer{
     display: flex;
@@ -361,6 +409,10 @@ body{
     color: white;
 }
 
+.footer .left a:hover{
+    color: var(--Hover);
+}
+
 
 .footer .left li {
     margin: 0 10px;
@@ -379,7 +431,26 @@ body{
 }
 
 .footer .rigth .discord, .reddit, .twitter{
+    cursor: pointer;
     background-color: #29292A;
     padding: 10px;
     border-radius: 20px;
 }
+
+.footer .rigth .discord:hover{
+    background: #5865F2;
+}
+
+.footer .rigth .reddit:hover{
+    background: #FF4500;
+}
+
+.footer .rigth .twitter:hover{
+    background-color: #1DA1F2;
+}
+
+
+
+
+/* Responsive */
+
