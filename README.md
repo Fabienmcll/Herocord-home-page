@@ -1,7 +1,6 @@
-# Recréation de la Page d'Accueil de HeroCord
+# Recréation de la Page d'Accueil de HeroCord (Version Desktop)
 
-Ce projet est une recréation de la page d'accueil du site [HeroCord](https://herocord.com/) en utilisant HTML, CSS et JavaScript. L'objectif principal de ce projet est de s'entraîner à reproduire des sites Web existants en utilisant des technologies de base. Il est important de noter que le site original est développé avec Bootstrap, de plus cette version a été développé sans les valeurs de pixel précises, en se basant sur l'observation visuelle et des outils de mesure approximatifs.
-
+Ce projet est une recréation de la page d'accueil du site [HeroCord](https://herocord.com/) en utilisant HTML, CSS et JavaScript. L'objectif principal de ce projet est de s'entraîner à reproduire la version desktop du site original en utilisant des technologies de base. Il est important de noter que la version mobile n'est pas incluse dans ce projet, et la reproduction est basée sur l'observation visuelle et des outils de mesure approximatifs, sans les valeurs de pixel précises.
 
 ## Technologies Utilisées
 
